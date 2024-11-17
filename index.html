@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Word Pattern Analyzer</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="icon.png" rel="icon"/>
+</head>
+  
+<body>
+<h1>word pattern analyzer.</h1>
+<div>
+  <span id="languageSelect">
+    <span class="radio">
+      <input type="radio" name="lang" id="en" value="en" onclick="languageChange(this)" checked/>
+      <label for="en">english</label>
+    </span>
+    <span class="radio">
+      <input type="radio" name="lang" id="es" value="es" onclick="languageChange(this)"/>
+      <label for="es">spanish</label>
+    </span>
+  </span>
+</div>
+<div>enter a pattern:</div>
+<span id="inputBox" spellcheck="false" contenteditable="true" default-value="here!"></span>
+<button id="finish" onclick="submit()">analyze</button>
+<div id="patternText"></div>
+<div id="tableContainer">
+  <table id="table">
+    <thead>
+      <tr>
+        <th>word</th>
+        <th>frequency</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+</div>
+<script src="script.js"></script>
+
+</body>
+
+</html>
